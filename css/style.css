@@ -31,6 +31,7 @@ body {
     line-height: 1.80857;
     font-weight: normal;
     overflow-x: hidden;
+    background-color: #ffffff;
     font-family: "Roboto Slab", serif;
     /* font-family: 'Poppins', sans-serif; */
 }
@@ -215,12 +216,43 @@ button {
 .banner_bg_main {
     width: 100%;
     float: left;
-    background-image: url(../images/banner-bg.png);
+    background-image: url(../images/3d-printing-pros-cons.avif);
     height: auto;
+    background-size: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+}
+/* .banner_bg_main::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    right: 0;
+    background-image: linear-gradient(#91a4f3, #ffffff);
+} */
+
+.banner_section_top {
+    width: 100%;
+    float: left;
+    background-image: url(../images/hinh13.png);
+    height: 563px;
     background-size: 100%;
     background-repeat: no-repeat;
 }
-
+.banner_bg_main::before {
+    content: "";
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+.flag-vn {
+    width: 18px;
+    height: 18px;
+}
 
 /* banner bg main end */
 
@@ -230,8 +262,9 @@ button {
 .header_section_top {
     width: 100%;
     float: left;
-    background-color: #2b2a29;
+    background-color: #25529f;
     clip-path: polygon(0 0, 100% 0, 96% 100%, 3% 100%);
+    background-image: linear-gradient(#072393, #aac5e5);
     height: auto;
     padding: 10px 0px;
 }
@@ -293,6 +326,7 @@ button {
 }
 
 .containt_main {
+    position: relative;
     display: flex;
 }
 
